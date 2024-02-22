@@ -1,3 +1,4 @@
 FROM python:3.9
-COPY Text_Date_Time.py /app/Text_Date_Time.py
-CMD ["python", "/app/Text_Date_Time.py"]
+WORKDIR /app
+COPY script.py /app/script.py
+CMD ["python", "/app/script.py"]
